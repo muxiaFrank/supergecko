@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Json from './views/Json.vue'
+import webssh from './views/webssh.vue'
+
 
 
 Vue.use(Router)
@@ -18,6 +20,11 @@ export default new Router({
       path: '/json',
       name: 'json',
       component: Json
+    },
+    {
+      path: '/console',
+      name: 'console',
+      component: webssh
     },
     {
       path: '/about',
