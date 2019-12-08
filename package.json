@@ -20,7 +20,7 @@
     "popper.js": "^1.15.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
-    "xterm": "^3.9.1"
+    "xterm": "^3.9.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "^3.2.0",
