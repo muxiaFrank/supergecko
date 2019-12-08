@@ -1,76 +1,92 @@
 <template>
-  <div id="app">
- 
-    <div id="nav" >
-      <div class="d-flex flex-row flex-md-row align-items-center p-3 px-md-4 bg-white">
-      <h2 class=" mr-md-auto mr-xs-auto mr-sm-auto font-weight-normal">Classical</h2>
-      <nav class="my-md-0">
-      <router-link to="/">首页</router-link> |
-      <router-link to="/json">功能</router-link> |
-      <router-link to="/about">关于</router-link>&nbsp;
-      </nav>
-      <a class="btn btn-outline-primary" href="#">注册/登陆</a>
-    </div>
-
-
-
-    </div>
-    <router-view/>
+  <div id="app" class="container">
+    <nav class="navbar navbar-expand-md navbar-light top bg-light">
+      <router-link to="/">
+        <a class="navbar-brand" href="#">Now <span class="sr-only">(current)</span>
+        </a>
+      </router-link>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <router-link to="/">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span>
+              </a>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/json"><a class="nav-link" href="#">Json</a>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/about">
+              <a class="nav-link" href="#">Setting</a>
+            </router-link>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </form>
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Sign in</button>
+      </div>
+    </nav>
+    <router-view />
   </div>
 </template>
 
 <script>
-export default {
-  
-}
+  export default {
+
+  }
 </script>
 
 <style scope>
-
-.tm-home-img-container {
-	/* background-image: url('img/tm-home-img.jpg'); */
-	background-size: auto;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 500px;
-}
-
-
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  /* padding-bottom: 8px; */
-  text-align: right
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
-.carousel-inner img {
-      width: 100%;
-      height: 100%;
+  .tm-home-img-container {
+    /* background-image: url('img/tm-home-img.jpg'); */
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
   }
 
-@media(max-width: 991px) {
+
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    color: #2c3e50;
+  }
+
+  #nav {
+    /* padding-bottom: 8px; */
+    text-align: right
+  }
+
+  #nav a {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+
+  #nav a.router-link-exact-active {
+    color: #42b983;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media(max-width: 991px) {
 
     .tm-home-img-container {
-		background:none;
-		height: auto;
-	}
- 
-}
+      background: none;
+      height: auto;
+    }
 
+  }
 </style>

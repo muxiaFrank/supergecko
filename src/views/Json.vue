@@ -1,8 +1,7 @@
 <template>
   <div class="container">
   <h2>JSON格式校验</h2>
-  <button v-on:click="toJson" type="button" class="btn btn-outline-secondary">Go</button>
-
+  <button v-on:click="toJson" type="button" class="btn btn-outline-secondary" >Go</button>
   <form>
     <div class="form-group row">
       <textarea v-model="holder" placeholder=""  class="form-control col-6" rows="5"  style="height:30em;"></textarea>

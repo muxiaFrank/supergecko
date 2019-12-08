@@ -1,6 +1,6 @@
 <template>
   <div class="home" >
-        <div id="demo" class="carousel slide" data-ride="carousel">
+        <div id="demo" class="carousel slide container" data-ride="carousel" style="padding: 0;">
         <!-- 指示符 -->
         <ul class="carousel-indicators">
             <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -8,7 +8,6 @@
             <li data-target="#demo" data-slide-to="2"></li>
             <li data-target="#demo" data-slide-to="3"></li>
         </ul>
- 
         <!-- 轮播图片 -->
         <div class="carousel-inner">
             <div class="carousel-item active carousel-bg1">
@@ -44,10 +43,8 @@
       <div class="col-6">
         <p>北京时间</p>
     <p>{{date.toLocaleString()}}</p>
-
       </div>
     </div>
-
     <div class="input-group container">
         <input v-model="msg" type="text" :placeholder="message" class="form-control col-5" />
         <span class="input-group-btn col-2">
@@ -112,3 +109,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.home{
+  text-align: center;
+}
+</style>
